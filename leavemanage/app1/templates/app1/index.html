@@ -1,0 +1,14 @@
+{%extends 'app1/home.html' %}
+{% block menu%}
+{{ block.super}}
+<li><a href="/leave">Leave</a></li>
+{% if request.user.is_superuser %}
+<li><a href="/leavetype">Leavetype</a></li>
+{% endif %}
+<li><a href="/logout">Logout</a></li>
+{% if request.user.is_authenticated %}
+<li><a href="">WELCOME {{ request.user.username }}</a></li>
+{% endif %}
+{% endblock %}
+{% block content %}
+{% endblock%}

@@ -1,0 +1,10 @@
+{% extends 'main/home.html' %}
+{% block content %}
+<h1>User Registration</h1>
+<h2>{{msg}}</h2>
+<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="submit" name="">
+</form>
+{% endblock %}

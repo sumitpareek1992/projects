@@ -1,0 +1,39 @@
+APP Name== Chat-Bot
+models.py Requirement== 
+1) Create table for User for registratio
+--django.contrib.auth.models import AbstractUser
+2)create one more table for chat
+migrate table on server
+
+views.py Requirement==
+1) write a view for call home.html
+2)write a view for authenticatio
+authenticate by using login 
+3) write view for logout 
+4) write a view for login with redirect to index.html
+5)write a view for user_registratio and call a from from back-end by using form.py
+
+
+urls.py Requirement==
+1)write an url for calling home.html
+2)write an url for calling user_registration
+3)write an url for go to login after authenticate with index.html
+4)write url.py inside app for channels
+
+settings.py Requirement==
+1)do setting for db_sqlite for back-end
+2)Recoznige your app in settings
+3) Take permission for AbstractUser class by AUTH_USER_MODEL
+
+form.py
+1)create an class for calling user class form
+2)call to user class to fatch a form from back-end
+3)give your riquired fields
+
+Template Reqirements==
+1)create templates folder inside app
+2) create annother folder with name of app
+3) write code for home.html with username , password , signup and login button with post request
+3) inherit home.html in user_registratio.html with block content and call user registration form here
+4)inherir user_registration.html with block form and write index.html and write code for chatting page
+

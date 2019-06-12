@@ -1,0 +1,10 @@
+{% extends 'app1/index.html'%}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input type="File" name="">
+	<input type="submit" name="" value="create leavetype">
+	
+</form>
+{% endblock %}
