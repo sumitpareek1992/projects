@@ -37,3 +37,19 @@ Template Reqirements==
 3) inherit home.html in user_registratio.html with block content and call user registration form here
 4)inherir user_registration.html with block form and write index.html and write code for chatting page
 
+For calling API install dajangorestframework bt using pip install restframework
+
+create annother urls.py inside app
+write your urls path for perticiular API like include then give path localhot:8000/api/index
+import APIView from rest_framework
+now write apiview class with method overriding
+call your API by using get,put,post,delete request
+write function for every request
+
+Deploye local server to public server
+1)create virtual env
+2)install python - r reqirement.txt which contains all requirements like django==2.1 gunicorn,psycopg2
+3)sudo apt-get update with sudo apt upgrade for upgrading
+4)run your file on gunicorn server
+5) call to postgresql to create new db for server
+6)write setup.py for binding
